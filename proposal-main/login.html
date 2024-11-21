@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Your Respon!</title>
+    <link rel="stylesheet" href="login.css">
+    <link rel="shortcut icon" href="images/gift.png" type="image/x-icon">
+</head>
+<body>
+
+<section class="body">
+    <div class="container">
+        <div class="benefits">
+            <h2>Why you should write your respon?</h2>
+            <ul>
+                <li>1. So i can know your respon</li>
+                <li>2. Don't worry this is not a phising website. i can guarrantee it.</li>
+                <li>3. And please it's okay again i telling you i wouldn't dare to do anything bad to you.</li>
+                <li>4. note: after you wrote your respon, you will get a auto email from this web. so please check your email.</li>
+            </ul>
+        </div>
+        <div>
+            <h1>Please tell me your response!</h1>
+            <form id="responseForm" method="POST" action="send_email.php">
+                <div class="form-group">
+                    <label for="name">Your name</label>
+                    <input type="text" id="name" name="name" placeholder="Your name of course." required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email</label>
+                    <input type="email" id="email" name="email" placeholder="Your email address just tell me one of the account, so i can respon ." required>
+                </div>
+                <div class="form-group">
+                    <label for="message">Response</label>
+                    <textarea id="message" name="message" placeholder="Now tell me your response please." required></textarea>
+                </div>
+                <button type="submit">ayo kirim!</button>
+            </form>
+            <div id="response" style="display: none;">
+                <h2>Thank you for your response</h2>
+                <p>And thanks for you to read message.</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+</body>
+</html>
